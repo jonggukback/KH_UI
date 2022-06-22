@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    body {
+      background-color: black;
+    }
+    div {
+      width: 250px;
+      height: 250px;
+      background-color: orange;
+      margin: 5px;
+      border-radius: 10px;
+    }
+    .special {
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <div></div>
+  <div></div>
+  <div class="special"></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+  <div></div>
+
+  <script>
+    const special = document.querySelector('.special');
+    special.addEventListener('click', (event) => {
+      console.log(`x 값은 ${event.pageX} 입니다.`);
+      console.log(`y 값은 ${event.pageY} 입니다.`);
+    });
+  </script>
+</body>
+</html>
